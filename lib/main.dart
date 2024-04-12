@@ -14,14 +14,13 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SingleChildScrollView(
-       child: Column(
-mainAxisAlignment: MainAxisAlignment.center,
-crossAxisAlignment: CrossAxisAlignment.stretch,
+        body: Column(
+mainAxisAlignment: MainAxisAlignment.end,
+crossAxisAlignment: CrossAxisAlignment.end,
 
           children: <Widget>[
-SizedBox(height:40),
-Center(child:Image.asset('assets/images/icon-main.png'),),
+SizedBox(height:60),
+Center(child:Image.asset('assets/images/logo.png',),),
 SizedBox(height:50),
 Container(margin:EdgeInsets.all(0),padding:EdgeInsets.all(0),child: Image.asset('assets/images/start_page.png',fit: BoxFit.fitWidth,),),
 SizedBox(height: 50,),
@@ -40,7 +39,8 @@ Center(child: Text('HAPPY FARMING!',
 SizedBox(height: 20,),
 Center(child: Text('Empowering Agriculture, Digitally.\nYour One-Stop Shop for Farming Needs!\nUnlock the potential of technology for farmers\n through our e-commerce app that helps you\n cultivate success.',textAlign: TextAlign.center,style: TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Colors.grey),)),
         
-     SizedBox(height: 50,), Row(
+     SizedBox(height: 50,),Expanded(child: Container(child: Text(""),),),
+      Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
 SizedBox(width: 50,),
@@ -59,7 +59,8 @@ Image.asset('assets/images/Screen-toogle.png'),
           ],
 
         
-      ),),
+      ),
+      // ),
       );
   }
 }

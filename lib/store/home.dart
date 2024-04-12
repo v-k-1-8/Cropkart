@@ -45,8 +45,8 @@ Center(child: Container( width: MediaQuery.of(context).size.width*0.9, child:Car
 Center(child: Container( width: MediaQuery.of(context).size.width*0.9, child:Card(elevation: 8,
                     child: Column(mainAxisAlignment:MainAxisAlignment.center,
                     children: <Widget>[
-                      Text('Total Ord rs'),
-                      Text('0/-',style: TextStyle(fontWeight: FontWeight.bold),),
+                      Text('Total Orders'),
+                      Text('0',style: TextStyle(fontWeight: FontWeight.bold),),
                       Text('Keep working',style: TextStyle(color:Colors.green),),
                     ],
                     ),
@@ -55,7 +55,7 @@ Center(child: Container( width: MediaQuery.of(context).size.width*0.9, child:Car
 Center(child: Container( width: MediaQuery.of(context).size.width*0.9, child:Card(elevation: 8,
                     child: Column(mainAxisAlignment:MainAxisAlignment.center,
                     children: <Widget>[
-                      Text('lifetime Value'),
+                      Text('Lifetime Orders Value'),
                       Text('0/-',style: TextStyle(fontWeight: FontWeight.bold),),
                       Text('Keep working',style: TextStyle(color:Colors.green),),
                     ],
